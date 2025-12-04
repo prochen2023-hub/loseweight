@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife 50+ | 個人化健身與營養計畫</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <h1>FitLife</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="active" data-page="dashboard">
+                    <span class="icon">📊</span> 總覽
+                </li>
+                <li data-page="nutrition">
+                    <span class="icon">🥗</span> 營養食譜
+                </li>
+                <li data-page="workout">
+                    <span class="icon">💪</span> 健身菜單
+                </li>
+                <li data-page="bodylog">
+                    <span class="icon">📈</span> 身體記錄
+                </li>
+                <li data-page="schedule">
+                    <span class="icon">📅</span> 訓練週期
+                </li>
+            </ul>
+            <div class="user-profile">
+                <div class="avatar">50</div>
+                <div class="info">
+                    <p class="name">User</p>
+                    <p class="status">增肌期 (Hypertrophy)</p>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <h2 id="page-title">總覽 Dashboard</h2>
+                <div class="date-display" id="current-date"></div>
+            </header>
+
+            <div id="content-area" class="content-area">
+                <!-- Dynamic Content Will Be Loaded Here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
