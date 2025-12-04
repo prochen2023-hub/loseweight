@@ -9,10 +9,10 @@
     --border: #DFE6E9;
     --success: #00B894;
     --warning: #FDCB6E;
-    
-    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-    
+
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
@@ -224,4 +224,186 @@ body {
     background-color: var(--success);
     width: 0%;
     transition: width 0.5s ease;
+}
+
+/* ===== 響應式設計 (RWD) ===== */
+
+/* 平板裝置 (768px 以下) */
+@media screen and (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.25rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .nav-links li {
+        flex-shrink: 0;
+        padding: 0.75rem 1rem;
+        margin-bottom: 0;
+        white-space: nowrap;
+        font-size: 0.9rem;
+    }
+
+    .user-profile {
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
+
+    .top-bar {
+        height: auto;
+        min-height: 60px;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .top-bar h2 {
+        font-size: 1.25rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .date-display {
+        font-size: 0.85rem;
+    }
+
+    .content-area {
+        padding: 1.5rem;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1.25rem;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+    }
+}
+
+/* 手機裝置 (480px 以下) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .sidebar {
+        padding: 0.75rem;
+    }
+
+    .logo {
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+
+    .logo-icon {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        gap: 0.25rem;
+    }
+
+    .nav-links li {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+        gap: 0.5rem;
+    }
+
+    .nav-links .icon {
+        font-size: 1rem;
+    }
+
+    .user-profile {
+        padding-top: 0.75rem;
+        margin-top: 0.75rem;
+        gap: 0.75rem;
+    }
+
+    .avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+
+    .info .name {
+        font-size: 0.9rem;
+    }
+
+    .info .status {
+        font-size: 0.7rem;
+    }
+
+    .top-bar {
+        padding: 0.75rem;
+        min-height: 50px;
+    }
+
+    .top-bar h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .date-display {
+        font-size: 0.8rem;
+    }
+
+    .content-area {
+        padding: 1rem;
+    }
+
+    .dashboard-grid {
+        gap: 0.75rem;
+    }
+
+    .card {
+        padding: 1rem;
+        border-radius: var(--radius-sm);
+    }
+
+    .card h3 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .stat-value {
+        font-size: 1.75rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+
+    .btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+    }
 }
